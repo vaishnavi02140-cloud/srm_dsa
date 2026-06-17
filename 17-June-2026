@@ -31,3 +31,17 @@ class Solution {
         System.out.println(count);
     }
 }
+
+---------------------------------------------------------------------------------------------------------
+class Solution {
+    public boolean isPalindrome(int x) {
+Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n%3==0){
+            System.out.println("B wins");
+        }
+        else{
+            System.out.println("A wins");
+        }        
+    }
+}
