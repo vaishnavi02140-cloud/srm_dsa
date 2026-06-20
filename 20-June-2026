@@ -68,9 +68,9 @@ class Solution {
             int mid = left + (right - left) / 2;
 
             if (canFinish(piles, h, mid)) {
-                right = mid; // try smaller speed
+                right = mid; 
             } else {
-                left = mid + 1; // need larger speed
+                left = mid + 1; 
             }
         }
 
@@ -81,9 +81,10 @@ class Solution {
         long hours = 0;
 
         for (int pile : piles) {
-            hours += (pile + k - 1) / k; // ceil(pile / k)
+            hours += (pile + k - 1) / k; 
         }
 
         return hours <= h;
     }
 }
+
